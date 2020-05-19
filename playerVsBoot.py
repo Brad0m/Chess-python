@@ -8,7 +8,7 @@ import time
 class PlayerVsBoot:
 
     def __init__(self):
-        self.user1 = input("JUGADOR1: ")
+        self.user1 = input("📍 JUGADOR1: ")
         self.user2 = "BO0T"
         self.board = board()
         self.piece = None
@@ -22,10 +22,10 @@ class PlayerVsBoot:
         print("\n")
         show(self.board)
         print("\n")
-        print(f"TURNO: {self.user1}", "\n", f"TROFEOS: {self.container_player}", "\n")
-        self.piece = self.menu.select("PIEZA: ")
+        print(f"📍 TURNO: {self.user1}", "\n", f"⭐️ TROFEOS: {self.container_player}", "\n")
+        self.piece = self.menu.select("📍 PIEZA: ")
         print(self.piece)
-        self.movement = self.menu.select("MOVIMIENT0: ")
+        self.movement = self.menu.select("📍 MOVIMIENT0: ")
         print(self.movement)
         self.check_move()
 
@@ -66,7 +66,7 @@ class PlayerVsBoot:
     def boot(self):
         
         os.system("cls")
-        print("EL BOOT ESTA PENSANDO......")
+        print("🕓 EL BOOT ESTA PENSANDO......")
         time.sleep(2)
         os.system("cls")
 
@@ -92,7 +92,7 @@ class PlayerVsBoot:
             self.board[movements2[0][1][0]][movements2[0][1][1]] = self.board[movements2[0][0][0]][movements2[0][0][1]]
             self.board[movements2[0][0][0]][movements2[0][0][1]] = "   "
             print("\n")
-            print(F"EL BOOT A JUGADO: {movements2[0][0]} -> {movements2[0][1]}", "\n", f"TROFEOS BOOT: {self.container_boot}")
+            print(F"📍 EL BOOT A JUGADO: {movements2[0][0]} -> {movements2[0][1]}", "\n", f"⭐️ TROFEOS BOOT: {self.container_boot}")
 
             # Verificar si el boot se a comido al rey para terminar el juego llamando al metodo winner
             if '♔ 1' in self.container_boot:
@@ -107,7 +107,7 @@ class PlayerVsBoot:
             self.board[movements1[0][1][0]][movements1[0][1][1]] = self.board[movements1[0][0][0]][movements1[0][0][1]]
             self.board[movements1[0][0][0]][movements1[0][0][1]] = "   "
             print("\n")
-            print(F"EL BOOT A JUGADO: {movements1[0][0]} -> {movements1[0][1]}", "\n", f"TROFEOS BOOT: {self.container_boot}")
+            print(F"📍 EL BOOT A JUGADO: {movements1[0][0]} -> {movements1[0][1]}", "\n", f"⭐️ TROFEOS BOOT: {self.container_boot}")
 
             if '♔ 1' in self.container_boot:
                 self.winner(self.user2, movements1[0][1])
@@ -116,9 +116,9 @@ class PlayerVsBoot:
 
     def winner(self, winner, movement):
 
-        show(self.boars)
+        show(self.board)
         print("\n")
-        print((F"{winner} A GANADO, MOVIMIENTO GANADOR: {movement}"))
+        print((f"📍 A GANADO -> ⭐️ {winner} ⭐️ | MOVIMIENTO GANADOR: {movement}"))
 
 
 # PlayerVsBoot().player()
