@@ -13,5 +13,5 @@ def show(board):
     for letter in letters_columns:
         print("    ", letter, end=" ")
 
-# from board import board            
-# show(board())
+from board import board            
+show(board())
