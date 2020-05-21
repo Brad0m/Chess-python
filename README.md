@@ -1,9 +1,7 @@
 # Chess-python
   *the game is in Spanish
   Chess game developed in python, with two game modes: Player VS Machine | Player VS Player.
-
-# Chess
-Developed by Brayan Dominguez in python
+  Developed by Brayan Dominguez
 
 # Game Modes
 -Player vs. Machine | player vs player
