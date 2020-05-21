@@ -1,8 +1,8 @@
-# Mini-project-Chess-python
+# Chess-python
   *the game is in Spanish
   Chess game developed in python, with two game modes: Player VS Machine | Player VS Player.
 
-# Mini project-chess
+# Chess
 Developed by Brayan Dominguez in python
 
 # Game Modes
